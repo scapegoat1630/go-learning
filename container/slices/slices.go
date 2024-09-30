@@ -22,7 +22,7 @@ func main() {
 	fmt.Println(arr)
 	var test []int
 	if test == nil {
-		fmt.Println("test is nil" )
+		fmt.Println("test is nil")
 	}
 	fmt.Println("After updateSlice(s2)")
 	updateSlice(s2)

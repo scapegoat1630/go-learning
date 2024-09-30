@@ -9,7 +9,8 @@ func main() {
 	ConvertIp()
 }
 
-/**
+/*
+*
 将ip转换为uint32
 不能使用strconv函数
 不能使用split函数

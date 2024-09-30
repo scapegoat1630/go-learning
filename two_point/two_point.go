@@ -142,11 +142,11 @@ func sortColors(nums []int) {
 		if c == 0 {
 			nums[i], nums[p0] = nums[p0], nums[i]
 			p0++
-			fmt.Printf("%#v\n",nums)
+			fmt.Printf("%#v\n", nums)
 		} else if c == 2 {
 			nums[i], nums[p1] = nums[p1], nums[i]
 			p1--
-			fmt.Printf("%#v\n",nums)
+			fmt.Printf("%#v\n", nums)
 		}
 	}
 }
