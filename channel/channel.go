@@ -7,8 +7,7 @@ import (
 
 func worker(id int, c chan int) {
 	for n := range c {
-		fmt.Printf("Worker %d received %c\n",
-			id, n)
+		fmt.Printf("Worker %d received %c\n", id, n)
 	}
 }
 
@@ -31,7 +30,6 @@ func chanDemo() {
 	for i := 0; i < 10; i++ {
 		channels[i] <- 'A' + i
 	}
-
 	time.Sleep(time.Millisecond)
 }
 

@@ -9,6 +9,25 @@ func climbStairs(n int) int {
 	return r
 }
 
+func climbStairs2(n int) int {
+	if n == 1 {
+		return 1
+	}
+	if n == 2 {
+		return 2
+	}
+	p, q := 1, 2
+	for i := 3; i <= n; i++ {
+		r := p + q
+		if i == n {
+			return r
+		}
+		p = q
+		q = r
+	}
+	return -1
+}
+
 func rob(nums []int) int {
 	if len(nums) == 0 {
 		return 0

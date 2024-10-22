@@ -60,3 +60,18 @@ func RotateArray(nums []int, c int) {
 	ReverseArray(nums[len(nums)-t:])
 	ReverseArray(nums)
 }
+
+func plusOne(digits []int) []int {
+	idx := len(digits) - 1
+	for idx >= 0 {
+		if digits[idx] == 9 {
+			digits[idx] = 0
+		} else {
+			digits[idx] += 1
+			return digits
+		}
+		idx--
+	}
+	digits = append([]int{1}, digits...)
+	return digits
+}

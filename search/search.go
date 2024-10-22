@@ -65,3 +65,16 @@ func averageOfLevels(n *Node) (averages []float64) {
 	}
 	return
 }
+
+func mySqrt(x int) int {
+	l, r := 0, x
+	mid := l + (r-l)/2
+	for l <= r {
+		if mid*mid <= x {
+			l = mid + 1
+		} else {
+			r = mid - 1
+		}
+	}
+	return mid
+}
