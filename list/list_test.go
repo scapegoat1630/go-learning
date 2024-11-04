@@ -1,9 +1,8 @@
 package list
 
 import (
-	"testing"
-
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestReverse(t *testing.T) {
